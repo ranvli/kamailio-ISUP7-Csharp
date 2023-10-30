@@ -1,5 +1,5 @@
 # kamailioCsharp
-Kamailio SIP ISUP 7 encoder/decoder library converted to c#
+Kamailio SIP ISUP 7 encoder/decoder library converted from C++ to C#
 
 This conversion was entirely manually converted by me. The included unit tests are fully working.
 There is no other c# version on the whole internet as far as I know.
