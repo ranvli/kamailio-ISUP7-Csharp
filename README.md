@@ -2,6 +2,7 @@ Kamailio-ISUP7-Csharp
 A Low-Level C# Library for SS7-ISUP Protocol Implementation for SIP-T
 
 This repository contains a low-level library written in C# that implements the SS7-ISUP (Signalling System No. 7 – ISDN User Part) protocol for SIP-T (SIP for Telephones). Inspired by the Kamailio sipt.c module, this library is designed to enable developers to build and integrate SS7-ISUP functionalities into SIP-T environments.
+C++ Original code: https://github.com/kamailio/kamailio/blob/master/src/modules/sipt/sipt.c
 
 Overview
 The purpose of this library is to provide a robust, flexible, and extensible foundation for:
