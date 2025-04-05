@@ -41,8 +41,6 @@ dotnet build
 This library is intended to be integrated into larger SIP-T or telecommunication projects. Below is a basic example of how to use the library for encoding an ISUP message:
 
 
-public void EncodeISUPMessage()
-{
     // Create a new ISUP message instance
     var isupMessage = new ISUPMessage(MessageType.IAM);
     
@@ -56,7 +54,6 @@ public void EncodeISUPMessage()
     byte[] encodedMessage = isupMessage.Encode();
     
     // Use the encoded message as needed (send over network, etc.)
-}
 
 For a detailed guide on message structure and additional usage examples, please refer to the Documentation.
 
