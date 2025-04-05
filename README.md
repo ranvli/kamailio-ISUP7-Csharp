@@ -40,27 +40,22 @@ Build the Solution: Open the solution in Visual Studio and build it, or use the 
 dotnet build
 This library is intended to be integrated into larger SIP-T or telecommunication projects. Below is a basic example of how to use the library for encoding an ISUP message:
 
-using Kamailio.ISUP7;
-using Kamailio.ISUP7.Messages;
 
-public class Example
+public void EncodeISUPMessage()
 {
-    public void EncodeISUPMessage()
-    {
-        // Create a new ISUP message instance
-        var isupMessage = new ISUPMessage(MessageType.IAM);
-        
-        // Set mandatory fields, e.g., Circuit Identification Code (CIC)
-        isupMessage.SetCIC(1234);
-        
-        // Add other parameters as needed
-        isupMessage.AddParameter(ParameterType.CallingPartyNumber, "5551234");
-        
-        // Encode the message into a byte array
-        byte[] encodedMessage = isupMessage.Encode();
-        
-        // Use the encoded message as needed (send over network, etc.)
-    }
+    // Create a new ISUP message instance
+    var isupMessage = new ISUPMessage(MessageType.IAM);
+    
+    // Set mandatory fields, e.g., Circuit Identification Code (CIC)
+    isupMessage.SetCIC(1234);
+    
+    // Add other parameters as needed
+    isupMessage.AddParameter(ParameterType.CallingPartyNumber, "5551234");
+    
+    // Encode the message into a byte array
+    byte[] encodedMessage = isupMessage.Encode();
+    
+    // Use the encoded message as needed (send over network, etc.)
 }
 
 For a detailed guide on message structure and additional usage examples, please refer to the Documentation.
